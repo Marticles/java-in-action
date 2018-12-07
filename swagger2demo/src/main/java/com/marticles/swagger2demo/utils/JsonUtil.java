@@ -1,4 +1,4 @@
-package Utils;
+package com.marticles.swagger2demo.utils;
 
 import com.alibaba.fastjson.JSONObject;
 

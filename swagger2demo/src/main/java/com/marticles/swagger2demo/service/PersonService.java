@@ -1,6 +1,6 @@
 package com.marticles.swagger2demo.service;
 
-import Utils.JsonUtil;
+import com.marticles.swagger2demo.utils.JsonUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.marticles.swagger2demo.dao.PersonCustomMapper;
@@ -9,7 +9,6 @@ import com.marticles.swagger2demo.model.Person;
 import com.marticles.swagger2demo.model.PersonExample;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import springfox.documentation.spring.web.json.Json;
 
 import java.util.List;
 
