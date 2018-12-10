@@ -1,0 +1,13 @@
+D:\IdeaProjects\javapractice\swagger2-demo\src\main\java\com\marticles\swagger2demo\model\PersonExample.java
+D:\IdeaProjects\javapractice\swagger2-demo\src\main\java\com\marticles\swagger2demo\dao\PersonCustomMapper.java
+D:\IdeaProjects\javapractice\swagger2-demo\src\main\java\com\marticles\swagger2demo\config\WebConfiguration.java
+D:\IdeaProjects\javapractice\swagger2-demo\src\main\java\com\marticles\swagger2demo\service\PersonService.java
+D:\IdeaProjects\javapractice\swagger2-demo\src\main\java\com\marticles\swagger2demo\Swagger2demoApplication.java
+D:\IdeaProjects\javapractice\swagger2-demo\src\main\java\com\marticles\swagger2demo\interceptor\CustomClientHttpRequestInterceptor.java
+D:\IdeaProjects\javapractice\swagger2-demo\src\main\java\com\marticles\swagger2demo\config\Swagger2Config.java
+D:\IdeaProjects\javapractice\swagger2-demo\src\main\java\com\marticles\swagger2demo\controller\PersonController.java
+D:\IdeaProjects\javapractice\swagger2-demo\src\main\java\com\marticles\swagger2demo\dao\PersonMapper.java
+D:\IdeaProjects\javapractice\swagger2-demo\src\main\java\com\marticles\swagger2demo\config\RestTemplateConfig.java
+D:\IdeaProjects\javapractice\swagger2-demo\src\main\java\com\marticles\swagger2demo\model\Person.java
+D:\IdeaProjects\javapractice\swagger2-demo\src\main\java\com\marticles\swagger2demo\interceptor\LogInterceptor.java
+D:\IdeaProjects\javapractice\swagger2-demo\src\main\java\com\marticles\swagger2demo\utils\JsonUtil.java

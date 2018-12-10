@@ -1,0 +1,16 @@
+com\marticles\swagger2demo\dao\PersonCustomMapper.class
+com\marticles\swagger2demo\config\RestTemplateConfig.class
+com\marticles\swagger2demo\interceptor\CustomClientHttpRequestInterceptor.class
+com\marticles\swagger2demo\Swagger2demoApplication.class
+com\marticles\swagger2demo\config\Swagger2Config.class
+com\marticles\swagger2demo\utils\JsonUtil.class
+com\marticles\swagger2demo\controller\PersonController.class
+com\marticles\swagger2demo\service\PersonService.class
+com\marticles\swagger2demo\dao\PersonMapper.class
+com\marticles\swagger2demo\interceptor\LogInterceptor.class
+com\marticles\swagger2demo\model\PersonExample$GeneratedCriteria.class
+com\marticles\swagger2demo\model\Person.class
+com\marticles\swagger2demo\model\PersonExample$Criteria.class
+com\marticles\swagger2demo\model\PersonExample.class
+com\marticles\swagger2demo\model\PersonExample$Criterion.class
+com\marticles\swagger2demo\config\WebConfiguration.class
