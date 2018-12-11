@@ -1,7 +1,7 @@
-package com.marticles.licensingservicer.Controller;
+package com.marticles.licensingservicer.controller;
 
-import com.marticles.licensingservicer.Model.License;
-import com.marticles.licensingservicer.Service.LicenseService;
+import com.marticles.licensingservicer.model.License;
+import com.marticles.licensingservicer.service.LicenseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

@@ -1,4 +1,4 @@
-package com.marticles.licensingservicer.Model;
+package com.marticles.licensingservicer.model;
 
 public class Organization {
     String id;

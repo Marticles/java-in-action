@@ -1,4 +1,4 @@
-package com.marticles.captchademo.Controller;
+package com.marticles.captchademo.controller;
 
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;

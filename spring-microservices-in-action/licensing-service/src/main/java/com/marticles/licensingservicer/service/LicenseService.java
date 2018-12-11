@@ -1,6 +1,6 @@
-package com.marticles.licensingservicer.Service;
+package com.marticles.licensingservicer.service;
 
-import com.marticles.licensingservicer.Model.License;
+import com.marticles.licensingservicer.model.License;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;

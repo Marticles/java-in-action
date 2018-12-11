@@ -1,4 +1,4 @@
-package com.marticles.licensingservicer.Service;
+package com.marticles.licensingservicer.service;
 
 import org.springframework.stereotype.Service;
 

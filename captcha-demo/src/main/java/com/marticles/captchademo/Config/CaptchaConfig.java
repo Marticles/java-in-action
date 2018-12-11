@@ -1,4 +1,4 @@
-package com.marticles.captchademo.Config;
+package com.marticles.captchademo.config;
 
 import java.util.Properties;
 
