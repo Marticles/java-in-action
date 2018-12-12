@@ -23,6 +23,19 @@ public class LicenseServiceController {
                 .withLicenseType("Test2");
     }
 
+    @RequestMapping(value="/{licenseId}/{clientType}",method = RequestMethod.GET)
+    public License getLicensesWithClient(
+            @PathVariable("organizationId") String organizationId,
+            @PathVariable("licenseId") String licenseId,
+            @PathVariable("clientType") String clientType) {
+
+        return new License()
+                .withId(licenseId)
+                .withOrganizationId(organizationId)
+                .withProductName("Test1")
+                .withLicenseType(clientType);
+    }
+
     @RequestMapping(value="{licenseId}",method = RequestMethod.PUT)
     public String updateLicenses( @PathVariable("licenseId") String licenseId) {
         return String.format("This is the put");
