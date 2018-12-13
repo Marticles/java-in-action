@@ -11,7 +11,7 @@ import org.springframework.http.HttpMethod;
 
 import java.util.List;
 
-@Component
+//@Component
 public class OrganizationDiscoveryClient {
     @Autowired
     private DiscoveryClient discoveryClient;

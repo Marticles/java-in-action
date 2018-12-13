@@ -3,6 +3,9 @@ package com.marticles.licensingservicer.controller;
 import com.marticles.licensingservicer.model.License;
 import com.marticles.licensingservicer.service.LicenseService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.sleuth.Sampler;
+import org.springframework.cloud.sleuth.sampler.AlwaysSampler;
+import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 public class LicenseServiceController {
     @Autowired
     private LicenseService licenseService;
+
 
     @RequestMapping(value="/{licenseId}",method = RequestMethod.GET)
     public License getLicenses(@PathVariable("organizationId") String organizationId,

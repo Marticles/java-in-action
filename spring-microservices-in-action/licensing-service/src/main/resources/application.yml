@@ -1,3 +1,6 @@
+server:
+  port: 5555
+
 
 eureka:
   instance:
@@ -8,3 +11,9 @@ eureka:
     serviceUrl:
         defaultZone: http://localhost:8761/eureka/
 
+spring:
+  zipkin:
+    base-url: http://localhost:8080
+  sleuth:
+    sampler:
+      percentage: 1
