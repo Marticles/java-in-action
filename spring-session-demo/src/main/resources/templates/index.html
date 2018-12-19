@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head lang="en">
+    <meta charset="UTF-8"></meta>
+    <title>Captcha Demo</title>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<h1><span id="login">当前状态：未登录</span></h1>
+
+<div>用户名：<input type="text" id="name"/></div>
+    <div>密码：<input type="text" id="password"/></div>
+
+<h2><span id="status">请输入验证码</span></h2>
+<div>
+    <img alt="验证码" id = "captcha_img" onclick="this.src='/captcha?d='+new Date()" src="/captcha"/>
+    <br>
+    <input type="text" id="try_code"/><br>
+    <input type="submit" id="submit_button" value="登录" class="btn btn-success">
+
+
+</div>
+
+
+</body>
+</html>
+<script>
+    window.onload=function(){
+        refresh();
+    }
+
+    $("#submit_button").click(function () {
+        var name = $("#name").val();
+        var password = $("#password").val();
+        var captchaValue = $("#try_code").val();
+        var captchaId = getCookie("captchaId");
+        // var captchaId = "CAPTCHA_1ed50f99-2fe1-4ac2-9064-887195cb583a";
+        $.ajax({
+            url: "/login",
+            type: "POST",
+            async: true,
+            data: {
+                "name": name,
+                "password": password,
+                "captchaValue": captchaValue,
+                "captchaId": captchaId
+            },
+            dataType: "json",
+            success: function (data) {
+                if (data["vrify_result"] == 1) {
+                    $("#status").html("登录成功！");
+                    $("#login").html("当前用户："+data["user_name"]);
+                } else {
+                    $("#status").html("登录失败");
+                }
+            },
+            error: function (err) {
+                console.log(err.statusText);
+            }
+        });
+    });
+
+    function refresh() {
+        var token = getCookie("token");
+        $.ajax({
+            url: "/checklogin",
+            type: "POST",
+            async: true,
+            data: {
+                "token": token
+            },
+            dataType: "json",
+            success: function (data) {
+                if (data["vrify_result"] == 1) {
+                    $("#status").html("你已登录");
+                    $("#login").html("当前用户："+data["user_name"]);
+                }
+
+                else{
+                    $("#status").html("请输入验证码");
+                    $("#login").html("当前状态：未登录");
+                }
+            },
+            error: function (err) {
+                console.log(err.statusText);
+            }
+        });
+
+    }
+
+
+    function getCookie(name){
+
+        var arr = document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));
+
+        if(arr != null)
+
+            return unescape(arr[2]);
+
+        return null;
+
+    }
+
+</script>

@@ -1,4 +1,4 @@
-package com.marticles.captchademo.config;
+package com.marticles.springsessiondemo.config;
 
 import java.util.Properties;
 
