@@ -7,8 +7,10 @@
 《Spring 微服务实战》
 
 ## spring-session-demo
-使用 Spring Session 与 Redis 实现用户登录的分布式 Session ，同时验证码也存入 Redis 中
+使用 Spring Session 与 Redis 实现分布式 Session
 
 ## jdk-cglib-dynamic-proxy
+学习 JDK 与 CGlib 动态代理
 
-学习JDK与CGLib动态代理
+## consistent-hashing
+实现一致性哈希算法
