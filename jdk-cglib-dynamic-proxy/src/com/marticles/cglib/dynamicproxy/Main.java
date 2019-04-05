@@ -3,7 +3,7 @@ package com.marticles.cglib.dynamicproxy;
 public class Main {
 
     public static void main(String[] args) {
-        ProxyClass proxyClass = (ProxyClass) CglibProxy.getProxyInstance(new ProxyClass());
+        TestProxyClass proxyClass = (TestProxyClass) CglibProxy.getProxyInstance(new TestProxyClass());
         proxyClass.doSomething();
         proxyClass.finalDoSomething();
     }

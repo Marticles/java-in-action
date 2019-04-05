@@ -63,6 +63,4 @@ public class ConsistentHashingCluster extends Cluster {
             }
         }
     }
-
-
 }
