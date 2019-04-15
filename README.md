@@ -11,7 +11,7 @@
 
 ## producer-consumer
 
-基于 wait/notify 实现生产者-消费者模型
+基于 wait()&notify() 实现生产者-消费者模型
 
 ## jdk-cglib-dynamic-proxy
 学习 JDK 与 CGlib 动态代理
@@ -22,3 +22,5 @@
 ## skip-list
 实现跳表
 
+## lru-cache
+基于 LinkedHashMap / HashMap&LinkedList 实现 LRU Cache
