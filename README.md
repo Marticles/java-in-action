@@ -1,4 +1,4 @@
-# marticles-in-action
+# java-in-action
 
 ## swagger2-demo
 一个集成了 Spring Boot 与 Swagger2 的 CRUD demo
